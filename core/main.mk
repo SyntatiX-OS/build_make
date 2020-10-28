@@ -90,9 +90,6 @@ clean-dex-files:
 				grep -q "\.dex$$" && rm -f $$i) || continue ) ; done
 	@echo "All dex files and archives containing dex files have been removed."
 
-# Include the google-specific config
--include vendor/google/build/config.mk
-
 # These are the modifier targets that don't do anything themselves, but
 # change the behavior of the build.
 # (must be defined before including definitions.make)
