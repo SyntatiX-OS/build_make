@@ -21,6 +21,7 @@ BUILD_SYSTEM :=$= build/make/core
 BUILD_SYSTEM_COMMON :=$= build/make/common
 
 include $(BUILD_SYSTEM_COMMON)/core.mk
+include vendor/syntatix/config/branding.mk
 
 # Mark variables that should be coming as environment variables from soong_ui
 # as readonly
